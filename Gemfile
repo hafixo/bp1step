@@ -75,7 +75,7 @@ group :production, :staging do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '>= 3.32.1'
   gem 'codeclimate-test-reporter', '~> 1.0.0'
   gem 'codecov', require: false
   # gem 'database_cleaner'
@@ -94,6 +94,6 @@ group :development, :test do
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
-  gem 'rubycritic'
+  gem 'rubycritic', '>= 2.8.0'
   gem 'selenium-webdriver'
 end
