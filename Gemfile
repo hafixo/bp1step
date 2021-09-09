@@ -51,7 +51,7 @@ gem 'rack', '>= 2.2.3'
 gem 'rails_performance' # monitor the performance
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   gem 'byebug'
   gem 'capistrano', '~>3.10.0'
