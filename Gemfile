@@ -63,14 +63,14 @@ group :development do
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
   gem 'capistrano-rails-db'
-  gem 'capistrano3-puma'
+  gem 'capistrano3-puma', '>= 4.0.0'
   gem 'sshkit-sudo'
   # gem 'log-analyzer', require: false
   # gem 'rack-mini-profiler', require: ['enable_rails_patches']
 end
 
 group :production, :staging do
-  gem 'puma', '>= 4.3.5'
+  gem 'puma', '>= 4.3.9'
   gem 'rails_12factor', require: false
 end
 
